@@ -1,4 +1,4 @@
-# Curso de Desarrollador Programador Web - Camada XXXX 💾
+# Curso de Desarrollador Programador Web - Camada 3650 💾
 
 ## Apuntes y ejercicios
 
@@ -6,17 +6,17 @@ Este repositorio es una guía para ir subiendo cada clase que hagamos juntos, po
 
 - Una carpeta **Profe** que va a contener todo lo que yo voy escribiendo en cada clase, separado a su vez en las siguientes carpetas:
 
-  * **En clase**: Todo lo que voy escribiendo en la clase así que no es necesario tomar apuntes, este contenido se los voy a subir después de cada explicación teórica para que lo tengan disponible en los ejercicios y desafíos.
+  - **En clase**: Todo lo que voy escribiendo en la clase así que no es necesario tomar apuntes, este contenido se los voy a subir después de cada explicación teórica para que lo tengan disponible en los ejercicios y desafíos.
 
-  * **Ejercicio**: El enunciado y la resolución hecha por mí del ejercicio que hacemos durante la clase.
+  - **Ejercicio**: El enunciado y la resolución hecha por mí del ejercicio que hacemos durante la clase.
 
-  * **Desafío**: El enunciado y la resolución hecha por mí del desafío que tiene para resolver en casa, normalmente esta resolución la explico y la subo al comienzo de la clase siguiente.
+  - **Desafío**: El enunciado y la resolución hecha por mí del desafío que tiene para resolver en casa, normalmente esta resolución la explico y la subo al comienzo de la clase siguiente.
 
 - Una carpeta **Alumno** que es para que la utilicen ustedes y que puede contener las siguientes carpetas:
 
-  * **Ejercicio**: Acá pueden hacer la resolución del ejercicio planteado en clase, en algunos casos les voy a subir parte del ejercicio para que solo tengan que completar una parte.
+  - **Ejercicio**: Acá pueden hacer la resolución del ejercicio planteado en clase, en algunos casos les voy a subir parte del ejercicio para que solo tengan que completar una parte.
 
-  * **Desafío**: Acá pueden hacer la resolución del desafío, también en algunos casos les voy a subir parte del ejercicio para que solo tengan que completar una parte.
+  - **Desafío**: Acá pueden hacer la resolución del desafío, también en algunos casos les voy a subir parte del ejercicio para que solo tengan que completar una parte.
 
 ## Teoría
 
@@ -26,9 +26,9 @@ El curso incluye documentación y videos dentro de la plataforma, pero también 
 
 1. Hagan un Fork del repositorio en su GitHub, arriba a la derecha esta el botón en github.
 2. En la consola posicionense en la carpeta donde van a guardar las clases, haciendo cd `<Nombre de la carpeta donde van a guardar el curso>`.
-3. Clonen el repositorio en su maquina local usando el comando `git clone <URL_del_repositorio en_su_GitHub>`.
-4. Entren al repositorio haciendo `cd programadorWeb-XXXX`. 
-5. Luego ejecuten el comando `git remote add profe <URL_del_repositorio en_mi_GitHub>` para vincular su repo con el mio.
+3. Clonen el repositorio en su maquina local usando el comando `git clone git@github.com:vdilena/programadorWeb-3650.git`.
+4. Entren al repositorio haciendo `cd programadorWeb-3650`.
+5. Luego ejecuten el comando `git remote add profe https://github.com/vdilena/programadorWeb-3650` para vincular su repo con el mio.
 6. Verifiquen que tienen agregados los dos origines con el comando `git remote -v`.
 7. Cada vez que quieran actualizar el repositorio con lo que subí hagan un `git pull profe master`.
 8. Para subir sus cambios usen los mismos comandos que usan siempre `git add .`, `git commit -m "<Comentario>"` y `git push`, los cambios solo se van a subir en su repositorio de GitHub.
