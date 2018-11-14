@@ -1,0 +1,23 @@
+datos de entrada
+
+ropa
+lavarropas
+jabon
+agua
+
+proceso
+
+abrir la tapa
+agregar la ropa
+cerrar la tapa
+programar el lavado
+poner en deposito jabon y suavizante
+colocar la manguer en la canilla
+abrir la canilla
+presionar boton de encendido
+esperar a que el lavado termine
+colgar la ropa para que se seque
+
+dato de salida
+
+ropa lavada y seca
