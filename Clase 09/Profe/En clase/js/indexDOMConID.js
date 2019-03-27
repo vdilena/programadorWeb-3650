@@ -1,0 +1,5 @@
+var nodoNombre = document.getElementById("nombre")
+console.log(`Id: ${nodoNombre.id}`)
+console.log(`Name: ${nodoNombre.name}`)
+console.log(`Clase: ${nodoNombre.className}`)
+console.log(`Value: ${nodoNombre.value}`)
