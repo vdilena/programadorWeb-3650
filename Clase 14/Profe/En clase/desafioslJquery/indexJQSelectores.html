@@ -5,14 +5,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="tab icon" href="./favicon.png">
-  <title>Clase 13 - En clase</title>
+  <title>Desafio clase 13 - Jquery Selectores y eventos</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+    integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.4.0.min.js"
     integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <script src="./js/index.js"></script>
+  <div style="width: 80%; margin: 50px auto">
+    <form onsubmit="event.preventDefault()">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="firstName" style="width: 100%">
+            <input type="text" class="form-control" id="firstName" placeholder="Nombre">
+          </label>
+          <div id="msjError-firstName"></div>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="email" style="width: 100%">
+            <input type="email" class="form-control" id="email" placeholder="Email">
+          </label>
+          <div id="msjError-email"></div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-12">
+          <label for="comments" style="width: 100%">
+            <textarea class="form-control" id="comments" placeholder="Comentarios" rows="3"></textarea>
+          </label>
+          <div id="msjError-comments"></div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-dark" style="width: 100%" disabled id="submitButton">Enviar info</button>
+    </form>
+  </div>
+  <script src="indexJQSelectores.js"></script>
 </body>
 
 </html>
