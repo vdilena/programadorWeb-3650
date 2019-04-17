@@ -4,15 +4,32 @@
 <head>
   <meta charset="UTF-8">
   <title>Clase 9</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+    integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+    integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <div id="container" class="container">
     <h2 class="text-center">Home</h2>
-    <button class='btn btn-danger' onclick='cerrarSesion()'>Cerrar sesion</button>
-    <script src="./js/index.js"></script>
-  </div>
+    <div class="text-right">
+      <button class='btn btn-danger' onclick='cerrarSesion()'>Cerrar sesion</button>
+      <button id="ver-usuario" class='btn btn-default'>Ver contenido pagina</button>
+    </div>
+    <div id="lista-usuario" class="text-center">
+      <div id="usuarios">
+        <div>
+          <ul id="lista-items" class="list-group">
+            <!-- <li class="list-group-item"></li> -->
+          </ul>
+        </div>
+        <div>
+          <button id="btnAddUser" class='btn btn-info'>Agregar usuario</button>
+        </div>
+      </div>
+      <script src="./js/index.js"></script>
+    </div>
 </body>
 
 </html>

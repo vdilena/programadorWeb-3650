@@ -12,6 +12,8 @@ var usuariosValidos = [{
   }
 ]
 
+guardarUsuariosSiNoLoEstaban()
+
 if (!localStorage.getItem("credenciales")) {
 
   localStorage.setItem("credenciales", JSON.stringify({}))
@@ -59,13 +61,6 @@ function ingresar() {
       if (usuarioValido.usuario == usuarioIngresado &&
         usuarioValido.password == passwordIngresado) {
 
-        // var nuevoDiv = document.createElement("div")
-        // nuevoDiv.innerHTML = "<h1 class='text-center'>Ingreso correctamente al sistema!</h1>"
-        // nuevoDiv.innerHTML += "<button class='btn btn-danger' onclick='cerrarSesion()'>Cerrar sesion</button>"
-
-        // var container = document.getElementById("container")
-        // container.innerHTML = nuevoDiv.innerHTML
-        //paginaIngresoSistema()
         irAHome()
 
         localStorage.setItem("credenciales", JSON.stringify({
@@ -102,3 +97,34 @@ function paginaIngresoSistema() {
 function irAHome() {
   location.href = "home.html"
 }
+
+function guardarUsuariosSiNoLoEstaban() {
+
+  if (!localStorage.getItem("usuarios")) {
+    localStorage.setItem("usuarios", JSON.stringify(usuariosValidos))
+  }
+}
+
+// Codigo animacion con Jquery
+
+$("#lista-items").hide()
+
+$("#ver-usuario").one("click", function () {
+
+  var usuarios = JSON.parse(localStorage.getItem("usuarios"))
+  for (var index = 0; index < usuarios.length; index++) {
+    var nuevoLI = $(`<li class="list-group-item">${usuarios[index].usuario}</li>`)
+    $("#lista-items").append(nuevoLI)
+  }
+
+  $("#lista-items").show(3000)
+})
+
+$("#btnAddUser").click(function () {
+
+  var nuevoUsuario = "hperalta"
+  var nuevoLI = $(`<li class="list-group-item">${nuevoUsuario}</li>`)
+  nuevoLI.hide()
+  $("#lista-items").append(nuevoLI)
+  nuevoLI.show(1000)
+})
