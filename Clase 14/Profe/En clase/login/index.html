@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="tab icon" href="./favicon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+        integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous">
+    </script>
+    <title>Login</title>
+</head>
+
+<body>
+    <div id="container" class="container">
+        <h2 class="text-center">Login</h2>
+        <h2 id="error_credenciales" style="color: red" class="text-center"></h2>
+        <form onsubmit="event.preventDefault()">
+            <div class="form-group">
+                <label>Ingrese usuario</label>
+                <input class="form-control" id="usuario" onblur="validarCantCaracteres(this)" onclick="resetError(this)"
+                    placeholder="Nombre de 6 letras o mas">
+                <div id="error_usuario_incorrecto"></div>
+            </div>
+            <div class="form-group">
+                <label>Ingrese password</label>
+                <input type="password" class="form-control" id="password" onblur="validarCantCaracteres(this)"
+                    onclick="resetError(this)" placeholder="Password de 6 letras o mas">
+                <div id="error_password_incorrecto"></div>
+            </div>
+            <button class="btn btn-primary float-right" onclick="ingresar()">Ingresar al sistema</button>
+        </form>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
